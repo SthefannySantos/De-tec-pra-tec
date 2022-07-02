@@ -1,0 +1,35 @@
+#carouselExampleCaptions .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+#img-db{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#carouselExampleCaptions .carousel-item::before {
+    content: "";
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 1, 0.701));
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.font-tv {
+    color: aliceblue;
+}
+
+.font-tv h5{
+font-size: 75px;
+}
+
+.font-tv p{
+font-size: 35px;
+    }

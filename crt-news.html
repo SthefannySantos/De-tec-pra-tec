@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/book-stack.png" type="image/png">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/themify-icons.css">
+        <link rel="stylesheet" href="css/flaticon.css">
+        <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+        <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <title>DeTecPraTec | Cadastro</title>
+    </head>
+    <body>
+        <header id="header" class="header_area">
+            <div class="main_menu">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
+                                <li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="tv-institucional.php">TV</a></li>
+                                <li class="nav-item"><a class="nav-link" href="administrativo.html">Criar</a></li>       
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contato</a></li>    
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="col-8 post-list mx-auto crt-form">
+            <h1 class="d-block pub-title">Criar publicação</h1>
+            <form action="php/upload.php" method="POST" class="crt-form" enctype="multipart/form-data">
+                <p class="crt-form">Título da Notícia</p>
+                <input type="text" name="titulo" id="titulo" class="crt-form" minlenght="50" maxlength="150">
+            
+                <p class="crt-form">Subtítulo da Notícia</p>
+                <input type="text" name="subtitulo" id="subtitulo" class="crt-form" minlenght="50" maxlength="150" placeholder="Coloque as informações necessárias sobre a notícia"/>
+                
+                <p class="crt-form">Conteúdo da Notícia</p>
+                <textarea required name="conteudo" id="conteudo" cols="50" class="crt-form crt-contd" rows="10"></textarea>
+
+                <p class="crt-form">Categoria</p>
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example" name="categoria" id="categoria" required>
+                    <option selected >Tipo de Notícia</option>
+                    <option value="1">Avisos</option>
+                    <option value="2">Achados e Perdidos</option>
+                    <option value="3">Aniversariantes</option>
+                    <option value="4">Projetos</option>
+                </select>
+
+                <label>Selecione uma imagem :</label>
+                <input type="file" name="image" id="image" required>
+                <div class="col-12 crt-form crt-submit">
+                    <button type="submit" name="submit" class="btn btn-primary crt-submit">Postar</button>
+                </div>
+            </form>
+        </div>
+            
+
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/contact.js"></script>
+        <script src="js/jquery.form.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/theme.js"></script>
+
+    </body>
+</html>
