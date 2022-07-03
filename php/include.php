@@ -11,10 +11,10 @@ $linhas = mysqli_num_rows($retorno);
 
 if ($linhas > 0) {
     //fazer se encontrou login e senha
-    header("Location: http://localhost/tcc/tcc-sitetrajano/eden-master/administrativo.html");
+    header("Location: http://localhost/official-website/administrativo.html");
 }else{
     //fazer se o retorno é vazio
-    header("Location: http://localhost/tcc/tcc-sitetrajano/eden-master/login.html");
+    header("Location: http://localhost/official-website/login.html");
 }
 
 ?>
