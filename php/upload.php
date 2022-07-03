@@ -32,7 +32,7 @@
 
                 if($insert) {
                     $status = 'success';
-                    $status_message = header("Location: http://localhost/tcc/tcc-sitetrajano/eden-master/index.php");
+                    $status_message = header("Location: http://localhost/official-website/index.php");
                 } else {
                     $status_message = 'Falha no armazenamento do arquivo.';
                 }
@@ -41,7 +41,7 @@
             }
         }
     } else {
-        $status_message = 'Please select an image file to upload.';
+        $status_message = 'Por favor selecione uma imagem para o upload.';
         
     }
     echo $status_message; 
